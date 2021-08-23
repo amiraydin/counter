@@ -12,7 +12,6 @@ class App extends React.Component {
       count: 0
     }
   }
-  // var h2ClassName = { color="red" }
 
   render() {
     console.log('render App');
@@ -20,7 +19,7 @@ class App extends React.Component {
     return (
       <>
 
-        <count value={0} />
+
         <div className="d-flex justify-content-center">
           <Compter count={this.state.count} increment={() => { this.setState({ count: this.state.count + 1 }) }} substract={() => {
             if (this.state.count < 1) {
